@@ -28,16 +28,16 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 43.75em) and (max-width: 62em) {
+@media (min-width: 43.75em) and (max-width: 64em) {
   body :not(.not-for-tablets) {
     display: none;
   }
   .not-for-tablets {
-    display: block;
+    display: inline;
   }
 }
 
-@media screen and (min-width: 62em) {
+@media screen and (min-width: 64em) {
   h1 {
     font-size: 3rem;
   }
