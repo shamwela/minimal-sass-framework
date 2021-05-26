@@ -2,27 +2,32 @@
 $main-typeface: sans-serif
 
 // DESKTOP TEXT SIZES
-$dt1: 3rem //48px
-$dt2: 1.5rem //24px
-$dt3: 1.0625rem //17px
-$dt4: 0.75rem //12px
+// $dt1: 3rem //48px
+// $dt2: 1.5rem //24px
+// $dt3: 1.0625rem //17px
+// $dt4: 0.75rem //12px
 
 // MOBILE TEXT SIZES
-$mt1: 2rem //32px
-$mt2: 1.3125rem //21px
-$mt3: 1.0625rem //17px
-$mt4: 0.75rem //12px
+// $mt1: 2rem //32px
+// $mt2: 1.3125rem //21px
+// $mt3: 1.0625rem //17px
+// $mt4: 0.75rem //12px
+
+// TEXT SIZES
+$t1: clamp(2rem, 4vw, 3rem)
+$t2: clamp(1.3125rem, 3vw, 1.5rem)
+$t3: clamp(1.0625rem, 2vw, 1.0625rem)
+$t4: clamp(0.75rem, 1vw, 0.75rem)
 
 // COLORS
-$main-bg-color: #ffffff
-$main-text-color: #000000
-$secondary-text-color: #878a8f
-$link-text-color: #0066cc
+$main-bg-color: white
+$main-text-color: black
+$link-color: #0066cc
 
 *
   margin: 0
   padding: 0
   box-sizing: border-box
   font-family: $main-typeface
-  font-size: $mt3
+  font-size: $t3
   color: $main-text-color

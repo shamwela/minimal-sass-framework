@@ -4,46 +4,40 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 1.0625rem;
-  color: #000000;
+  font-size: clamp(1.0625rem, 2vw, 1.0625rem);
+  color: black;
 }
 
-.not-for-tablets {
-  display: none;
-}
-
-h1 {
-  font-size: 2rem;
+h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
 h2 {
-  font-size: 1.3125rem;
+  font-size: clamp(1.3125rem, 3vw, 1.5rem);
+}
+
+h3 {
+  font-size: clamp(1.0625rem, 2vw, 1.0625rem);
+}
+
+h4 {
+  font-size: clamp(0.75rem, 1vw, 0.75rem);
+}
+
+p {
+  font-size: clamp(1.0625rem, 2vw, 1.0625rem);
 }
 
 a {
+  color: #0066cc;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-@media (min-width: 43.75em) and (max-width: 64em) {
-  body :not(.not-for-tablets) {
-    display: none;
-  }
-  .not-for-tablets {
-    display: inline;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
 }
 /*# sourceMappingURL=main.css.map */

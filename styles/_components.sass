@@ -1,34 +1,28 @@
 // anything reusable such as buttons, navbars, cards etc
 // PHONE
-.not-for-tablets
-  display: none
-
-h1
-  font-size: $mt1
+h1, h2, h3, h4
   font-weight: bold
 
+h1
+  font-size: $t1
+
 h2
-  font-size: $mt2
+  font-size: $t2
+
+h3
+  font-size: $t3
+
+h4
+  font-size: $t4
+
+p
+  font-size: $t3
 
 a
+  color: $link-color
   text-decoration: none
   &:hover
     text-decoration: underline
 
-// TABLET
-@media (min-width: 43.75em) and (max-width: 64em)
-  // Block contents on Tablets
-  body :not(.not-for-tablets) 
-    display: none
-  
-  // Say that this website is not for Tablets
-  .not-for-tablets
-    display: inline
-
 // DESKTOP
-@media screen and (min-width: 64em)
-  h1
-    font-size: $dt1
-
-  h2
-    font-size: $dt2
+// @media screen and (min-width: 64em)
